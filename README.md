@@ -1,8 +1,11 @@
 # CapCraft
+
 Welcome to our language learning platform! Our project aims to facilitate language acquisition through media immersion. By providing tools to translate subtitles and lyrics automatically, we empower learners not only to consume but also to understand content in foreign languages.
 
 ## Features
+
 Here is a list of the features we are offering:
+
 - **Video and Music with Subtitles and Lyrics**: Enjoy a variety of multimedia content with subtitles and lyrics that synchronize with the timeline.
 - **Automatic Translation**: Our platform automatically translates subtitles and lyrics, synchronizing them with the timeline for seamless understanding.
 - **Favorite Content**: Save your favorite videos and music for easy access.
@@ -10,22 +13,26 @@ Here is a list of the features we are offering:
 - **Direct Messaging**: Reach out to us directly through the landing page. Simply provide your name, email, and message, and we'll get back to you promptly.
 
 ### Vue.js
+
 - Reactive UI for an interactive user experience.
 - Component-based architecture and Vue Router for seamless navigation.
 - Dynamic data management with Pinia
 - Element Plus is used for our UI (User-visible component library written by others) [Element Plus](https://element-plus.org/en-US/component/overview.html)
 
 ## APIs
+
 - **Rapid Translate Multi Traduction**: Empowers our platform with robust translation capabilities. [Translate API Documentation](https://rapidapi.com/sibaridev/api/rapid-translate-multi-traduction) Only 50 request per day.
 - **Spotify API**: Enhances the music experience by integrating with Spotify for access to a vast library of songs and lyrics. [Spotify API Documentation 1](https://developer.spotify.com/documentation/web-playback-sdk), [Spotify API Documentation 2](https://rapidapi.com/Glavier/api/spotify23)
 
 ## Data
+
 - The application uses Spotify data to search and obtain music information, including song title, artist, pre-play link, and lyrics information.
 - User data includes favorite videos and music, user avatar and username.
 - All user data is stored in Firebase.
 - Firebase provides a secure hash of your login information.
 
 ## Live Demo
+
 Experience CapCraft on the website：[CapCraft](https://vt24-project-group27.firebaseapp.com/)
 
 ## File Structure
@@ -113,14 +120,9 @@ Experience CapCraft on the website：[CapCraft](https://vt24-project-group27.fir
     ├── 📄 VideoDetailsView.tsx                 # Video details view
     └── 📄 VideoIndexView.tsx                   # Video index view
 ```
+
 We chose to develop our project using the latest versions of TypeScript and Less. Our goal is to leverage the most current front-end development technologies. Additionally, we adhere strictly to the MVP (Model-View-Presenter) architecture in two key ways.
 
 Firstly, we organize the MVP structure in separate files to manage functions and pages efficiently. Secondly, for components, we manage the MVP structure within a single file for each component. This approach is widely recognized by latest industry for its effectiveness in organizing components properly.
 
 Our commitment to these practices ensures our project is well-structured and meet the latestet industry standards.
-
-## Contributors
-- William Zhan [wilzha@kth.se](https://gits-15.sys.kth.se/wilzha)
-- Tingting Li [tinl@kth.se](https://gits-15.sys.kth.se/tinl)
-- Ziang Guo [ziangg@kth.se](https://gits-15.sys.kth.se/ziangg)
-
