@@ -1,0 +1,278 @@
+
+.introduction {
+  .menu {
+    display: flex;
+    padding: 36px 0px 36px 160px;
+    // position: fixed;
+    position: absolute;
+    top: 0px;
+    span {
+      color: #af96bc;
+      font-family: 'Plus Jakarta Sans';
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-right: 56px;
+    }
+  }
+  .content {
+    background: rgba(12, 18, 31, 0.95);
+    .first-screen {
+      width: 100%;
+      height: 900px;
+      background-image: url('/intro.png');
+      // 1524 x 1781
+      background-size: 762px 890px;
+      background-repeat: no-repeat;
+      background-position: right 0;
+      .h1-title {
+        font-family: 'Plus Jakarta Sans';
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        background: linear-gradient(180deg, #f38bdc 38.5%, rgba(243, 139, 220, 0) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: block;
+        width: 590px;
+        padding-top: 200px;
+        padding-left: 38px;
+      }
+      .instructions {
+        color: #af96bc;
+
+        font-family: 'Plus Jakarta Sans';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        //text-transform: capitalize;
+        display: block;
+        width: 500px;
+        padding-left: 38px;
+        margin-top: 72px;
+      }
+    }
+    .language-mastery {
+      .title {
+        color: #f38bdc;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: block;
+        padding-left: 58px;
+      }
+      .options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        .card {
+          margin-top: 102px;
+          width: 400px;
+          height: 478px;
+          flex-shrink: 0;
+          border-radius: var(--16, 16px);
+          border: 2px solid var(--second-color, #713c96);
+          background: rgba(217, 217, 217, 0);
+          color: var(--white-100, #fff);
+
+          font-family: 'Plus Jakarta Sans';
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          background-size: 360px 360px;
+          background-repeat: no-repeat;
+          background-position: center 30px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          padding-bottom: 30px;
+        }
+        .card-video {
+          background-image: url('/card-video.png');
+        }
+        .card-music {
+          background-image: url('/card-music.png');
+        }
+        .card-translate {
+          background-image: url('/card-translate.png');
+        }
+      }
+
+      @media(max-width: 1000px){
+        .options {
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: warp;
+          .card {
+            margin-top: 20px;
+          }
+        }
+      }
+      .video {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        .watch {
+          width: 80%; /* Percentage of the parent container */
+          height: 0; /* Use padding-top for aspect ratio */
+          padding-top: 52.43%; /* Height / Width * 100% to maintain aspect ratio */
+          border-radius: var(--16, 16px);
+          background-color: rgba(113, 60, 150, 0.24);
+          background-image: url(/watch-video.png);
+          background-size: contain; /* Or use 'cover' depending on your design needs */
+          background-repeat: no-repeat;
+          background-position: right center;
+          margin-right: 56px; /* Adjust or remove margin based on responsiveness */
+        }
+        // .watch-video-icon {
+        //   height: 104px;
+        //   width: 287px;
+        //   position: absolute;
+        //   top: 497px;
+        //   right: 964px;
+        //   background-image: url(/watch-video-icon.png);
+        //   background-size: 100% 100%;
+        //   background-repeat: no-repeat;
+        // }
+      }
+
+      @media(max-width: 900px){
+        .video {
+          .watch {
+            width: 95%;
+            padding-top: 56.5%;
+            margin-right: 10px;
+          }
+        }
+      }
+      
+      .music {
+        width: 100%;
+        height: 1050px;
+        background-image: url('/music-bg.png');
+        background-repeat: no-repeat;
+        background-size: 300px 1050px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 58px;
+        position: relative;
+        .listen {
+          position: relative;
+          z-index: 10;
+          width: 100%; /* Full width of the parent container */
+          height: 696px; /* Static height - can be changed to be responsive if needed */
+          border-radius: var(--16, 16px);
+          background-color: #774f96;
+          background-image: url('/watch-music.png');
+          background-size: contain; /* Ensures the image is fully visible and aspect ratio is maintained */
+          background-repeat: no-repeat;
+          background-position: center; /* Centers the background image */
+        }
+        @media (max-width: 900px) {
+          .listen {
+              height: 50vh; /* Adjust height based on the viewport height */
+              background-size: cover; /* Covers the entire element area */
+          }
+      }
+        .watch-music-icon {
+          height: 104px;
+          width: 287px;
+          position: absolute;
+          bottom: 180px;
+          right: calc(50% - 140px);
+          background-image: url(/watch-video-icon.png);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          z-index: 20;
+        }
+        .icon {
+          background-image: url('/music-icon.png');
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          height: 240px;
+          width: 400px;
+          position: absolute;
+          top: 35px;
+          z-index: 5;
+        }
+      }
+
+      
+      .about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .cont-bg {
+          position: absolute;
+          z-index: 10;
+          border-radius: 24px;
+          //border: 2px solid var(--second-semantic, #af96bc);
+          //background: linear-gradient(255deg, #0f1421 0%, #302339 59.55%, #4b2f4d 97.28%);
+          width: 80%; /* Percentage of the parent container */
+          height: 0;
+          padding-top: 52.71%; /* Height / Width * 100% to maintain aspect ratio */
+          border-radius: 24px;
+        }
+        .cont {
+          z-index: 20;
+          position: relative;
+          border-radius: 24px;
+          background-image: url('/about.png');
+          background-repeat: no-repeat;
+          background-size: contain; /* Adjust this to 'cover' if you want the image to fill the area */
+          width: 80%; /* Same width as .cont-bg to maintain alignment */
+          height: 0;
+          padding-top: 52.71%; /* Same padding-top as .cont-bg */
+        }
+        // .watch-about-icon {
+        //   height: 104px;
+        //   width: 287px;
+        //   position: absolute;
+        //   top: calc(100% - 104px);
+        //   left: calc(calc(calc(100% - 1321px) / 2) + 40px);
+        //   background-image: url(/watch-video-icon.png);
+        //   background-size: 100% 100%;
+        //   background-repeat: no-repeat;
+        //   z-index: 25;
+        // }
+      }
+
+      @media (max-width: 900px) {
+        .cont-bg, .cont {
+            width: 95%; /* Increase the width for smaller screens */
+            padding-top: 56%; /* Adjust the padding-top if the aspect ratio changes */
+        }
+    }
+
+
+      .feedback {
+        margin-top: 180px;
+        margin-bottom: 180px;
+        width: 100%;
+        min-height: 200px;
+      }
+      
+
+      
+    }
+  }
+}
+
+

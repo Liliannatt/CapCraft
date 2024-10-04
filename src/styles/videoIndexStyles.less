@@ -1,0 +1,59 @@
+.videoIndex {
+  .type {
+    display: flex;
+    width: 379.779px;
+    height: 69.952px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #7429a9;
+    background-color: #514d5b;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 18px;
+
+    & > div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 8px;
+      border-radius: 20px;
+      height: 80%;
+    }
+    .selected {
+      background-color: #95a4fc;
+      animation: fadeIn 0.2s ease-in-out;
+      @keyframes fadeIn {
+        from {
+          background-color: transparent;
+        }
+        to {
+          background-color: #95a4fc;
+        }
+      }
+    }
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: auto;
+    .videoIndex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 33%;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 1200px) {
+      .videoIndex {
+        width: 50%; 
+        margin-left: 50px;
+
+      }
+    }
+
+}
+}

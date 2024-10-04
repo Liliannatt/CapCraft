@@ -1,0 +1,154 @@
+.musicDetails {
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .controls {
+    width: 381px;
+    height: 80px;
+    border-radius: 32px;
+    background: #15294a;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+
+    .el-dropdown-link {
+      color: #f6f6f6;
+      font-family: 'Plus Jakarta Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .translate {
+      width: 157.867px;
+      height: 67.368px;
+      border-radius: 32px;
+      background: #fd83e2;
+      color: var(--white-100, #fff);
+      text-align: center;
+      font-family: 'Plus Jakarta Sans';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+  .content {
+    display: flex;
+    margin-top: 18px;
+    flex-direction: column;
+  }
+  .music-details {
+    width: 100%;
+    height: 552px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+
+    .img {
+      border-radius: 25px;
+      border: 1px solid #fff;
+      height: 100%;
+      width: 100%;
+      background-repeat: repeat;
+      background-size: 100% 100%;
+    }
+  }
+  .name {
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: -75px;
+  }
+  .like-icon {
+    display: inline-block;
+    position: relative;
+    top: -110px;
+    margin-left: 10px;
+  }
+  .audio {
+    width: 30%;
+  }
+  .cb {
+    display: flex;
+    justify-content: space-between;
+  }
+  .subtitles {
+    margin-left: 5%;
+    width: 65%;
+    height: 601px;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.07);
+    overflow: hidden;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: ease 0.5s;
+      color: #fff;
+      font-family: 'Plus Jakarta Sans';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      padding: 0;
+
+      li {
+        list-style: none;
+        color: white;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-bottom: 20px;
+        text-align: center;
+        display: block;
+
+        &.active {
+          color: #f38bdc;
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+
+  // Media queries for responsiveness
+  @media (max-width: 768px) {
+    .controls {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      flex-direction: column;
+    }
+    .cb {
+      flex-direction: column;
+      align-items: center;
+    }
+    .audio {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .subtitles {
+      width: 100%;
+      margin-left: 0;
+      height: 601px;
+      margin-top: 20px; 
+    }
+    .name, .like-icon {
+      margin-top: 120px; 
+    }
+    
+  }
+
+}

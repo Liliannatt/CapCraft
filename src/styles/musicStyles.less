@@ -1,0 +1,63 @@
+.music-index {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  .search-input {
+    width: 550px;
+    border-radius: var(--16, 16px);
+    border: 1px solid var(--main-stroke, #7429a9);
+    background: rgba(217, 217, 217, 0.19);
+    .el-input__wrapper {
+      height: 48px;
+      border-radius: var(--16, 16px);
+      border: 1px solid var(--main-stroke, #7429a9);
+      background: rgba(217, 217, 217, 0.19);
+      color: rgba(255, 255, 255, 0.61);
+      font-size: 24px;
+    }
+    .el-input__inner {
+      color: rgba(255, 255, 255, 0.61);
+      font-family: 'Plus Jakarta Sans';
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .no-music {
+    height: 100%;
+    width: 100%;
+    background-image: url('/404.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .music-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: auto;
+    max-height: 100%;
+    & div {
+      flex: 1;
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 12px;
+  margin-right: 4px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(243, 139, 220, 0.35);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}

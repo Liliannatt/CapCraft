@@ -1,0 +1,18 @@
+body {
+  margin: 0 0;
+}
+
+#app {
+  height: 100vh;
+}
+
+.animated-scroll {
+  /* 根据需要调整持续时间和缓动 */
+  transition: scroll 0.3s ease-in-out;
+}
+
+.el-drawer__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
